@@ -1,0 +1,22 @@
+ El zen de Python: 
+ 
+ 
+         Hermoso es mejor que feo. 
+         Expl?cito es mejor que impl?cito. 
+         Simple es mejor que complejo. 
+         Complejo es mejor que complicado. 
+         Sencillo es mejor que anidado. 
+         Escaso es mejor que denso. 
+         La legibilidad cuenta. 
+         Los casos especiales no son lo suficientemente especiales para romper las reglas. 
+         Lo pr?ctico le gana a la pureza. 
+         Los errores no debe pasar en silencio. 
+         A menos que sean silenciados. 
+         En cara a la ambig?edad, rechazar la tentaci?n de adivinar. 
+         Debe haber una - y preferiblemente s?lo una - manera obvia de hacerlo. 
+         Aunque esa manera puede no ser obvia en un primer momento a menos que seas holand?s. 
+         Ahora es mejor que nunca. 
+         Aunque "nunca" es a menudo mejor que "ahora mismo". 
+         Si la aplicaci?n es dif?cil de explicar, es una mala idea. 
+         Si la aplicaci?n es f?cil de explicar, puede ser una buena idea. 
+         Los espacios de nombres son una gran idea ?hay que hacer m?s de eso! 
