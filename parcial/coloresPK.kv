@@ -1,0 +1,76 @@
+RootWidget:
+
+<RootWidget>:
+	MyCustomLayout1:
+		id: layout_1
+		size: root.size
+		pos: root.pos
+	MyCustomLayout2:
+		layout_1: layout_1
+		size: root.size[0]*.3, root.size[1]*.6
+		pos: root.size[0]*(0.65), root.size[1]*.1
+    MyCustomLayout3:
+		layout_1: layout_1
+		size: root.size[0]*.3, root.size[1]*.2
+		pos: root.size[0]*0.05, root.size[1]*.3
+    MyCustomLayout4:
+		layout_1: layout_1
+		size: root.size[0]*.3, root.size[1]*.6
+		pos: root.size[0]*(0.35), root.size[1]*.1
+
+		
+<MyCustomLayout1>:
+	Label:
+		text: 'Hola Mundo'
+		color: (0., 0., 0., 1.)
+		pos_hint: {'x': .35, 'y':.72}
+		size_hint: (.60, .25)
+		canvas.before:
+			Color:
+				rgb: root.label_color
+			Rectangle:
+				size: self.size
+				pos: self.pos
+
+<MyCustomLayout2@BoxLayout>:
+	orientation: 'vertical'
+	ToggleButton:
+		text: 'Magenta'
+		group: 'color_buttons'
+		on_press: root.layout_1.label_color = [0.89,0.013,0.55]
+	ToggleButton:
+		text: 'Cyan'
+		group: 'color_buttons'
+		on_press: root.layout_1.label_color = [0.14,0.91,0.83]
+	ToggleButton:
+		text: 'Naranja'
+		group: 'color_buttons'
+		on_press: root.layout_1.label_color = (0.95,0.2,0.036)
+
+<MyCustomLayout3@BoxLayout>:
+	orientation: 'vertical'
+	Button:
+	    #font_size:75
+		text: 'Limpiar'
+		on_release: root.layout_1.label_color = 244,244,244
+
+<MyCustomLayout4@BoxLayout>:
+	orientation: 'vertical'
+	ToggleButton:
+		text: 'Rojo'
+		group: 'color_buttons'
+		on_press: root.layout_1.label_color = [1,0,0,1]
+	ToggleButton:
+		text: 'Azul'
+		group: 'color_buttons'
+		on_press: root.layout_1.label_color = [0,0,1,1]
+	ToggleButton:
+		text: 'Amarillo'
+		group: 'color_buttons'
+		on_press: root.layout_1.label_color = (2,1,0)
+
+
+
+
+
+
